@@ -26,7 +26,7 @@ var pusher = new Pusher({
 });
 
 app.get('/', (req, res) => {
-   res.sendFile('index.html', {root: path.join(__dirname + "/public/html")});
+   res.sendFile('index.html');
 });
 
 app.post('/contactus_send', (req, res) => {

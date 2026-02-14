@@ -2,10 +2,10 @@
   "name": "ca-website",
   "version": "1.0.0",
   "description": "CA website",
-  "main": "app.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "start": "http-server ./ -p 5173 -c-1 -o ./index.html",
     "start-dev": "nodemon app.js"
   },
   "author": "Shivam Garg",
@@ -13,10 +13,13 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "mongoose": "^5.0.10",
-    "nodemailer": "^4.6.3",
-    "nodemon": "^1.17.2",
-    "pusher": "^1.5.1"
+    "express-handlebars": "^8.0.6",
+    "mongoose": "^9.2.1",
+    "nodemailer": "^8.0.1",
+    "nodemon": "^3.1.11",
+    "pusher": "^5.3.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
